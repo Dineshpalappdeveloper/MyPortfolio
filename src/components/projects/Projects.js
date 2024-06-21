@@ -1,6 +1,10 @@
 import React from "react";
 import Title from "../layouts/Title";
 import ProjectsCard from "./ProjectsCard";
+
+import portfolioImage from "../../assets/images/projects/portfolioImage.png";
+import donocareImage from "../../assets/images/projects/donacareecommerce.png";
+import reactBlog from "../../assets/images/projects/reactblogapp.png";
 import { mypustak, mypustakpartners, mypustakblog } from "../../assets/index";
 
 const Projects = () => {
@@ -37,6 +41,27 @@ const Projects = () => {
           src={mypustakblog}
           github=""
           hostlink="https://www.mypustak.com/blog"
+        />
+        <ProjectsCard
+          title="Donocare E-commerce Website"
+          des="This  is  an e-commerce website using the MERN stack, offering robust functionality and a seamless user experience"
+          src={donocareImage}
+          github="https://github.com/Dineshpalappdeveloper/Donocare_MERN_Stack_Project.git"
+          hostlink="https://donocare-shoping-site.netlify.app/"
+        />
+        <ProjectsCard
+          title="Blog Website"
+          des="This is a blog website where I share my favorite foods, places, and more"
+          src={reactBlog}
+          github="https://github.com/Dineshpalappdeveloper/React_Blog_Web_App.git"
+          hostlink="https://react-blog-app-by-dk.netlify.app/"
+        />
+        <ProjectsCard
+          title="Portfolio Website"
+          des="This is my portfolio website showcasing my projects, skills, and professional experience."
+          src={portfolioImage}
+          github=""
+          hostlink="https://dineshdeveloper-portfolio.vercel.app/"
         />
       </div>
     </section>
