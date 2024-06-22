@@ -4,6 +4,7 @@ import { FaLinkedinIn, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import DownloadPDF from "./DownloadPDF";
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
@@ -98,6 +99,7 @@ const LeftBanner = () => {
           </div>
         </div>
       </div>
+      <DownloadPDF />
     </div>
   );
 };
