@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
+import axios from "axios";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -10,41 +11,68 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-
-  // ========== Email Validation start here ==============
+  const [loading, setLoading] = useState(false);
   const emailValidation = () => {
     return String(email)
       .toLocaleLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  // ========== Email Validation end here ================
-
   const handleSend = (e) => {
     e.preventDefault();
+
+    const phonePattern = /^[6-9]\d{9}$/;
+
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
       setErrMsg("Phone number is required!");
+    } else if (!phonePattern.test(phoneNumber)) {
+      setErrMsg("Please enter a valid phone number!");
     } else if (email === "") {
-      setErrMsg("Please give your Email!");
+      setErrMsg("Please provide your Email!");
     } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+      setErrMsg("Please provide a valid Email!");
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Please provide your Subject!");
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      setLoading(true);
+      const body = {
+        fullname: username,
+        email: email,
+        phone_number: phoneNumber,
+        subject: subject,
+        message: message,
+      };
+      axios
+        .post("http://localhost:4000/hr/response", body)
+        .then((res) => {
+          console.log(res, "res");
+          setSuccessMsg(
+            `Thank you, ${username}, your message has been sent successfully!`
+          );
+          setErrMsg("");
+          setUsername("");
+          setPhoneNumber("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        })
+        .catch((err) => {
+          setErrMsg(`Message not Send due to${err}`);
+        });
+      setLoading(false);
     }
   };
+
+  const handlePhoneNumber = (e) => {
+    const inputPhoneNumber = e.target.value;
+    if (/^\d*$/.test(inputPhoneNumber)) {
+      setPhoneNumber(inputPhoneNumber);
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -88,13 +116,13 @@ const Contact = () => {
                     Phone Number
                   </p>
                   <input
-                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    onChange={handlePhoneNumber}
                     value={phoneNumber}
                     className={`${
                       errMsg === "Phone number is required!" &&
                       "outline-designColor"
                     } contactInput`}
-                    type="text"
+                    type="tel"
                   />
                 </div>
               </div>
@@ -145,7 +173,7 @@ const Contact = () => {
                   onClick={handleSend}
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  {loading ? "Sending..." : " Send Message"}
                 </button>
               </div>
               {errMsg && (
@@ -164,6 +192,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

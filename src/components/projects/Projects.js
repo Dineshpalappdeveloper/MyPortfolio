@@ -2,6 +2,8 @@ import React from "react";
 import Title from "../layouts/Title";
 import ProjectsCard from "./ProjectsCard";
 
+import todo from "../../assets/images/projects/todo.png";
+import digitalClock from "../../assets/images/projects/clock.png";
 import portfolioImage from "../../assets/images/projects/portfolioImage.png";
 import donocareImage from "../../assets/images/projects/donacareecommerce.png";
 import reactBlog from "../../assets/images/projects/reactblogapp.png";
@@ -62,6 +64,20 @@ const Projects = () => {
           src={portfolioImage}
           github=""
           hostlink="https://dineshdeveloper-portfolio.vercel.app/"
+        />
+        <ProjectsCard
+          title="Todo Website"
+          des="A web application to manage your tasks efficiently, featuring a clean and intuitive interface for adding, editing, and deleting tasks."
+          src={todo}
+          github="https://github.com/Dineshpalappdeveloper/TODO_APP.git"
+          hostlink="https://dineshpalappdeveloper.github.io/TODO_APP/"
+        />
+        <ProjectsCard
+          title="Digital Clock Website"
+          des="A sleek and modern digital clock web application displaying the current time with a user-friendly interface."
+          src={digitalClock}
+          github="https://github.com/Dineshpalappdeveloper/Clock_App.git"
+          hostlink="https://dineshpalappdeveloper.github.io/Clock_App/"
         />
       </div>
     </section>

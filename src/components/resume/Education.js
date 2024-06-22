@@ -55,7 +55,7 @@ const Education = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Full Stack React Developer"
-            subTitle="TechnixIndia.com - (2024 - Present)"
+            subTitle="Technix Technology - (2024 - Present)"
             result="Patna (Bihar)"
             des="Developing and maintaining web applications using React. Collaborating with cross-functional teams to design and implement new features. Ensuring high performance and responsiveness of applications. Working with RESTful APIs and backend services to integrate functionalities."
           />
