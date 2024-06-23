@@ -46,9 +46,11 @@ const Contact = () => {
         message: message,
       };
       axios
-        .post("http://localhost:4000/hr/response", body)
+        .post(
+          "https://portfolio-server-givbam4tv-dinesh-kumars-projects-f9207b88.vercel.app/",
+          body
+        )
         .then((res) => {
-          console.log(res, "res");
           setSuccessMsg(
             `Thank you, ${username}, your message has been sent successfully!`
           );
@@ -60,7 +62,10 @@ const Contact = () => {
           setMessage("");
         })
         .catch((err) => {
-          setErrMsg(`Message not Send due to${err}`);
+          console.log(err, "err");
+          setErrMsg(
+            `Message not Send due to${err},send screenshot on whatsApp 8986113306`
+          );
         });
       setLoading(false);
     }
