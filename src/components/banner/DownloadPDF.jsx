@@ -1,53 +1,47 @@
 import React from "react";
-import axios from "axios";
-import { saveAs } from "file-saver";
-// import { FaDownload } from "react-icons/fa";
-
+import resumeFile from "../../assets/images/resume.pdf";
 const DownloadPDF = () => {
-  const handleDownload = async () => {
-    const pdfUrl = process.env.PUBLIC_URL + "/resume.pdf"; // Path to your PDF file
+  const pdfUrl = process.env.PUBLIC_URL + "/resume.pdf"; // Path to your PDF file
 
-    try {
-      const response = await axios({
-        url: pdfUrl,
-        method: "GET",
-        responseType: "blob", // Important
-      });
+  const handleDownload = () => {
+    // Create a temporary anchor element
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.target = "_blank";
+    link.setAttribute("download", "resume.pdf"); // Set the download attribute
 
-      // Using file-saver library to save the PDF file
-      saveAs(response.data, "resume.pdf");
-    } catch (error) {
-      console.error("Error fetching or saving PDF: ", error);
-      // Handle error, e.g., show an error message to the user
-    }
-  };
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("SamplePDF.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
+    // Append the anchor to the body
+    document.body.appendChild(link);
 
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "SamplePDF.pdf";
-        alink.click();
-      });
-    });
+    // Trigger the click event on the anchor element
+    link.click();
+
+    // Clean up: Remove the anchor element from the DOM
+    document.body.removeChild(link);
   };
 
   return (
     <div>
+      <div style={{ height: "500px", marginBottom: "20px" }}>
+        <object data={pdfUrl} type="application/pdf" width="100%" height="100%">
+          {/* Fallback message if the browser does not support PDF rendering */}
+          <p>
+            It appears you don't have a PDF plugin for this browser. No worries,
+            you can <a href={pdfUrl}>click here to download the PDF file.</a>
+          </p>
+        </object>
+      </div>
       <button
         className="bg-black-800 border border-red-500 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={handleDownload}
       >
-        {/* <FaDownload className="inline-block mr-2" /> */}
         Download CV
       </button>
-
-      <button onClick={onButtonClick}>Download PDF</button>
+      <h1>
+        <a href={resumeFile} download="resume.pdf">
+          download01
+        </a>
+      </h1>
     </div>
   );
 };
