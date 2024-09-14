@@ -24,18 +24,24 @@ const Education = () => {
           />
 
           <ResumeCard
+            title="Master of Computer Applications"
+            subTitle="Indra Gandhi National Open University, Patna "
+            result="84%  "
+            des="Learned Advance software development, web design, database management, and networking. Gained hands-on experience with programming languages like Java and python,and also get much more experience in cyber security ,"
+          />
+          <ResumeCard
             title="Bachelor of Computer Applications"
             subTitle="Anugrah Memorial College, Gaya (2019-2022)"
             result="80%  "
             des="Learned software development, web design, database management, and networking. Gained hands-on experience with programming languages like Java and Python, and collaborated on team projects, preparing for a career in tech."
           />
 
-          <ResumeCard
+          {/* <ResumeCard
             title="Intermediate of Science (Math)"
             subTitle="Gurua Collage,Gurua (2018-2019)"
             result="65%"
             des="Studied calculus, algebra, mechanics, thermodynamics, and chemical reactions. Developed strong analytical, problem-solving, and laboratory skills through rigorous coursework and experiments."
-          />
+          /> */}
           {/* 
           <ResumeCard
             title="High School (10th Grade)"

@@ -39,17 +39,14 @@ const Contact = () => {
     } else {
       setLoading(true);
       const body = {
-        fullname: username,
+        name: username,
         email: email,
-        phone_number: phoneNumber,
+        phone: phoneNumber,
         subject: subject,
         message: message,
       };
       axios
-        .post(
-          "https://portfolio-server-givbam4tv-dinesh-kumars-projects-f9207b88.vercel.app/",
-          body
-        )
+        .post("https://donocareserverv2.vercel.app/api/submit", body)
         .then((res) => {
           setSuccessMsg(
             `Thank you, ${username}, your message has been sent successfully!`
@@ -60,14 +57,16 @@ const Contact = () => {
           setEmail("");
           setSubject("");
           setMessage("");
+          setLoading(false);
         })
         .catch((err) => {
+          setLoading(false);
+
           console.log(err, "err");
           setErrMsg(
             `Message not Send due to${err},send screenshot on whatsApp 8986113306`
           );
         });
-      setLoading(false);
     }
   };
 

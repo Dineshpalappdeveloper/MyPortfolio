@@ -7,7 +7,13 @@ import digitalClock from "../../assets/images/projects/clock.png";
 import portfolioImage from "../../assets/images/projects/portfolioImage.png";
 import donocareImage from "../../assets/images/projects/donacareecommerce.png";
 import reactBlog from "../../assets/images/projects/reactblogapp.png";
-import { mypustak, mypustakpartners, mypustakblog } from "../../assets/index";
+import {
+  mypustak,
+  mypustakpartners,
+  mypustakblog,
+  bbplus,
+  donocare,
+} from "../../assets/index";
 
 const Projects = () => {
   return (
@@ -23,7 +29,21 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="MYPUSTAK ECOMMERCE WEBSITE"
+          title="BUSSINESS BOOK PLUS"
+          des="BusinessBook Plus is an enterprise accounting software that simplifies accounting and inventory management with easy transactions, automated processing, and insightful reporting, enhancing business operations and profitability."
+          src={bbplus}
+          github=""
+          hostlink="https://businessbookplus.com/"
+        />
+        <ProjectsCard
+          title="Donocare consultancy services (Cofounder at Donocare.com) "
+          des="DonoCare Technology is a leading software company providing IT consulting, software development, web and mobile apps development,"
+          src={donocare}
+          github=""
+          hostlink="https://www.donocare.com/"
+        />
+        <ProjectsCard
+          title="Mypustak Ecommerce Website"
           des="An online platform offering a wide range of new and used books at competitive prices, ensuring an easy and affordable book-buying experience."
           src={mypustak}
           github=""

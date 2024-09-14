@@ -36,12 +36,20 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I am a skilled Full Stack Web Developer with expertise in frontend
-          (HTML, CSS, JavaScript ,React,Next.js) and backend (Node.js, Express)
-          technologies. also 7+ months experience as a Frontend developer(Next
-          js,React js) at MyPustak, Their problem-solving abilities, commitment
-          to clean code, and effective communication make them a valuable asset
-          in creating exceptional web applications
+          I have more than one year of experience as a Software Developer, and I
+          have a solid understanding of both frontend and backend technologies.
+          I am skilled in HTML, CSS, JavaScript, React.js, Next.js, Node.js, and
+          Express.js. My experience working on high-performance web applications
+          at Technix Technology and MyPustak.com has given me the skills needed
+          to be a valuable member of your team. Besides my technical skills, I
+          have a history of creating websites that are both responsive and
+          visually appealing. I am good at writing code that is scalable, easy
+          to maintain, and efficient. My recent projects, which include complex
+          features like dynamic forms, customizable tables, and responsive
+          designs, show that I can handle challenging tasks with accuracy and
+          creativity. And, my dedication to continuous learning, as shown by my
+          completion of a Full Stack Web Development (MERN) course, ensures that
+          I keep up with the latest industry trends.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
