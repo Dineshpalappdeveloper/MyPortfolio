@@ -55,7 +55,7 @@ const Education = () => {
 
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2023- 2024</p>
+          <p className="text-sm text-designColor tracking-[4px]">2022- Present</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
@@ -67,7 +67,7 @@ const Education = () => {
           />
           <ResumeCard
             title="Software Development Engineer"
-            subTitle="MyPustak.com - (2023 - 2024)"
+            subTitle="MyPustak.com - (2022 - 2024)"
             result="Rajarhat, Kolkata (West Bengal)"
             des="Developed web apps with Next.js, focusing on performance and SEO. Collaborated on new features, optimized existing ones, and ensured high code quality through testing and reviews."
           />

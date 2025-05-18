@@ -8,7 +8,7 @@ import DownloadPDF from "./DownloadPDF";
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
-      "Full Stack Developer.",
+      "Frontend Developer.",
       "Web Designer",
       "React Js Developer",
       "Professional Coder.",
@@ -36,20 +36,29 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I have more than one year of experience as a Software Developer, and I
-          have a solid understanding of both frontend and backend technologies.
-          I am skilled in HTML, CSS, JavaScript, React.js, Next.js, Node.js, and
-          Express.js. My experience working on high-performance web applications
-          at Technix Technology and MyPustak.com has given me the skills needed
-          to be a valuable member of your team. Besides my technical skills, I
-          have a history of creating websites that are both responsive and
-          visually appealing. I am good at writing code that is scalable, easy
-          to maintain, and efficient. My recent projects, which include complex
-          features like dynamic forms, customizable tables, and responsive
-          designs, show that I can handle challenging tasks with accuracy and
-          creativity. And, my dedication to continuous learning, as shown by my
-          completion of a Full Stack Web Development (MERN) course, ensures that
-          I keep up with the latest industry trends.
+          I am a passionate and dedicated Frontend Developer with over 3+ years
+          of hands-on experience building scalable, responsive, and user-centric
+          web applications. I specialize in modern frontend technologies
+          including HTML5, CSS3, JavaScript, React.js, Next.js (App Router),
+          Tailwind CSS, Redux Toolkit, and TypeScript. My professional journey
+          includes impactful contributions at Global Grand Gaming Pvt. Ltd. and
+          MyPustak.com, where I developed high-performance applications and led
+          UI/UX enhancements that boosted user engagement.
+        </p>
+        <p className="text-base font-bodyFont leading-6 tracking-wide">
+          I have a strong foundation in application architecture, responsive
+          design, and component-driven development. I have built complex
+          features like dynamic forms, interactive dashboards, and custom UI
+          components using libraries like MUI, Flowbite React, AG Grid, and
+          shadcn/ui. My problem-solving skills are backed by solving over 600
+          DSA problems in JavaScript and certifications such as the Full Stack
+          Web Development (MERN) course from Prepbytes.
+        </p>
+        <p className="text-base font-bodyFont leading-6 tracking-wide">
+          I’m eager to bring my skills and creative mindset to a
+          forward-thinking team where I can contribute to innovative projects,
+          grow alongside skilled professionals, and continue pushing the
+          boundaries of frontend development.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">

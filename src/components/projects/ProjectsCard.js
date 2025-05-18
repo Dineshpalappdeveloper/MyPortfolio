@@ -25,7 +25,7 @@ const ProjectsCard = ({ title, des, src, github, hostlink }) => {
                     <BsGithub />
                   </a>
                 ) : (
-                  <span className=" cursor-not-allowed ">
+                  <span className=" cursor-not-allowed " title="Private Repositories">
                     <BsGithub />
                   </span>
                 )}

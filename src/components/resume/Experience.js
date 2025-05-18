@@ -23,7 +23,7 @@ const Experience = () => {
           />
           <ResumeCard
             title="Software Development Engineer"
-            subTitle="MyPustak.com - (2023 - 2024)"
+            subTitle="MyPustak.com - (2022 - 2024)"
             result="Rajarhat, Kolkata (West Bengal)"
             des="Developed web apps with Next.js, focusing on performance and SEO. Collaborated on new features, optimized existing ones, and ensured high code quality through testing and reviews."
           />

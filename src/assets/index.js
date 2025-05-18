@@ -9,6 +9,7 @@ import mypustakpartners from "./images/projects/mypustapartners.png";
 import mypustakblog from "./images/projects/mypustakblog.png";
 import donocare from "./images/projects/donocareofficial.png";
 import bbplus from "./images/projects/bbplus.png";
+import ggcricket from "./images/projects/ggFantasy.png";
 export {
   logo,
   bannerImg,
@@ -21,4 +22,5 @@ export {
   mypustakblog,
   donocare,
   bbplus,
+  ggcricket,
 };

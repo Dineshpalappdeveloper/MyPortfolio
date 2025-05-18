@@ -13,6 +13,7 @@ import {
   mypustakblog,
   bbplus,
   donocare,
+  ggcricket,
 } from "../../assets/index";
 
 const Projects = () => {
@@ -28,6 +29,13 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+        <ProjectsCard
+          title="Grand Gaming Cricket Fantasy League"
+          des="Built and launched Grand Gaming Fantasy Cricket, a free-to-play fantasy platform for IPL fans to create teams, follow live match updates, and win prizes without entry fees."
+          src={ggcricket}
+          github=""
+          hostlink="https://www.grandgaming.com/"
+        />
         <ProjectsCard
           title="BUSSINESS BOOK PLUS"
           des="BusinessBook Plus is an enterprise accounting software that simplifies accounting and inventory management with easy transactions, automated processing, and insightful reporting, enhancing business operations and profitability."
