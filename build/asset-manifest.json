@@ -1,19 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8b03168.css",
-    "main.js": "/static/js/main.9a7265ac.js",
-    "static/media/bannerImg.png": "/static/media/bannerImg.caa3d5e2872e84d77cf2.png",
+    "main.css": "/static/css/main.2adf35db.css",
+    "main.js": "/static/js/main.76cb65fb.js",
+    "static/media/reactblogapp.png": "/static/media/reactblogapp.8fd3a30af440b8224d2f.png",
+    "static/media/donacareecommerce.png": "/static/media/donacareecommerce.0f0a671d55f12ace7a96.png",
+    "static/media/donocareofficial.png": "/static/media/donocareofficial.6a59fbf7fa56585bc33e.png",
+    "static/media/portfolioImage.png": "/static/media/portfolioImage.2e47dc1ca3b186994b69.png",
+    "static/media/mypustakproject.png": "/static/media/mypustakproject.6234f8c7c5ecadd13671.png",
+    "static/media/mypustapartners.png": "/static/media/mypustapartners.a050b80987e9f451dc0f.png",
+    "static/media/ggFantasy.png": "/static/media/ggFantasy.f16626376e0c11a9b569.png",
+    "static/media/mypustakblog.png": "/static/media/mypustakblog.c6b8eea430730c58ed93.png",
+    "static/media/bbplus.png": "/static/media/bbplus.20cdfa38e5bc720ed7c3.png",
+    "static/media/clock.png": "/static/media/clock.ed7196efae1daa92eec3.png",
+    "static/media/resume.pdf": "/static/media/resume.6c6b5633350b02342e2d.pdf",
+    "static/media/todo.png": "/static/media/todo.275a8b2d8c1b99f35f35.png",
+    "static/media/bannerImg.jpeg": "/static/media/bannerImg.cd4621e5d27d0b84e6c1.jpeg",
     "static/media/contactImg.png": "/static/media/contactImg.8ddfbfd11798f881db54.png",
     "static/media/testimonialOne.png": "/static/media/testimonialOne.c4706b2d1cadcb9f4daf.png",
-    "static/media/projectThree.jpeg": "/static/media/projectThree.47442baa3158613330ab.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.a776d86d0e281e0577e3.jpeg",
     "static/media/testimonialTwo.png": "/static/media/testimonialTwo.c6df2773c486964035d9.png",
-    "static/media/projectTwo.jpg": "/static/media/projectTwo.1fabe2c8c93632187ee6.jpg",
     "index.html": "/index.html",
-    "main.d8b03168.css.map": "/static/css/main.d8b03168.css.map",
-    "main.9a7265ac.js.map": "/static/js/main.9a7265ac.js.map"
+    "main.2adf35db.css.map": "/static/css/main.2adf35db.css.map",
+    "main.76cb65fb.js.map": "/static/js/main.76cb65fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b03168.css",
-    "static/js/main.9a7265ac.js"
+    "static/css/main.2adf35db.css",
+    "static/js/main.76cb65fb.js"
   ]
 }
