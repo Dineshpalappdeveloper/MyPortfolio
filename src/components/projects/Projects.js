@@ -50,28 +50,28 @@ const Projects = () => {
           github=""
           hostlink="https://www.donocare.com/"
         />
-        <ProjectsCard
+        {/* <ProjectsCard
           title="Mypustak Ecommerce Website"
           des="An online platform offering a wide range of new and used books at competitive prices, ensuring an easy and affordable book-buying experience."
           src={mypustak}
           github=""
           hostlink="https://www.mypustak.com/"
-        />
+        /> */}
 
-        <ProjectsCard
+        {/* <ProjectsCard
           title="MyPustak E-commerce Partners Website"
           des="A comprehensive platform where partners can upload images, view orders, and manage their order processes efficiently."
           src={mypustakpartners}
           github=""
           hostlink="https://partners.mypustak.com/"
-        />
-        <ProjectsCard
+        /> */}
+        {/* <ProjectsCard
           title="MyPustak Blog Website"
           des="Explore book reviews, recommendations, and literary articles on the MyPustak Blog. Perfect for book lovers looking for their next great read!"
           src={mypustakblog}
           github=""
           hostlink="https://www.mypustak.com/blog"
-        />
+        /> */}
         <ProjectsCard
           title="Donocare E-commerce Website"
           des="This  is  an e-commerce website using the MERN stack, offering robust functionality and a seamless user experience"
