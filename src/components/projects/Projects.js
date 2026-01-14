@@ -8,9 +8,9 @@ import portfolioImage from "../../assets/images/projects/portfolioImage.png";
 import donocareImage from "../../assets/images/projects/donacareecommerce.png";
 import reactBlog from "../../assets/images/projects/reactblogapp.png";
 import {
-  mypustak,
-  mypustakpartners,
-  mypustakblog,
+  // mypustak,
+  // mypustakpartners,
+  // mypustakblog,
   bbplus,
   donocare,
   ggcricket,
